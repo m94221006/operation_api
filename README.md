@@ -6,10 +6,10 @@ Topics:
 - run and testing
 
 ## Environment
-1.python:3.5
-1.django==2.1.2
-1.djangorestframework==3.8.2
-1.djangorestframework-jwt==1.11.0
+1. python:3.5
+1. django==2.1.2
+1. djangorestframework==3.8.2
+1. djangorestframework-jwt==1.11.0
 
 ## Introduction
 
