@@ -54,6 +54,12 @@ class InstanceViewSet(viewsets.ModelViewSet):
         item_instance = instance.fun_raw_sql_query(region=region)
         serializer = InstanceSerializer(item_instance, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    @list_route(methods=['get'])
+    def get_all_instances(self,request):
+        item_instance= instance.objects.all()
+        serializer = InstanceSerializer(item_instance, many=True)
+        return Response(serializer.data)
 
     def create(self, validated_data):
         """
